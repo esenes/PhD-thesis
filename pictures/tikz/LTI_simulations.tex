@@ -1,0 +1,40 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-6,-4) rectangle (8, 2);
+
+\draw [line width=1pt] (-2,1)-- (2,1);
+\draw [line width=1pt] (2,1)-- (2,-1);
+\draw [line width=1pt] (2,-1)-- (-2,-1);
+\draw [line width=1pt] (-2,-1)-- (-2,1);
+\draw [->,line width=1pt] (-3.5,0) -- (-2,0);
+\draw [->,line width=1pt] (2,0) -- (3.5,0);
+
+\draw (-4.25,1.5) node {\parbox{4cm}{\centering Beam Current  }};
+\draw (-4.25,0) node {\parbox{4cm}{\centering $I(t)$}};
+\draw (5.4,1.5) node {Probe Electric Field};
+\draw (5.5,0) node {\parbox{6cm}{\centering $E(\vec{x};t) = h(t)\ast I(t)$}};
+
+\draw (0, 1.5) node {\parbox{4cm}{\centering CST Simulation }};
+\draw (0, 0) node {\parbox{4cm}{\centering $h(t)$ }};
+
+
+
+\draw [line width=1pt] (-2,-2)-- (2,-2);
+\draw [line width=1pt] (2,-2)-- (2,-4);
+\draw [line width=1pt] (2,-4)-- (-2,-4);
+\draw [line width=1pt] (-2,-4)-- (-2,-2);
+\draw [->,line width=1pt] (-3.5,-3) -- (-2,-3);
+\draw [->,line width=1pt] (2,-3) -- (3.5,-3);
+
+\draw (-4.25,-3) node {\parbox{4cm}{\centering $\widetilde{I}(f)$}};
+\draw (5.5,-3) node {\parbox{6cm}{\centering $\widetilde{E}(\vec{x};f) = H(f) \widetilde{I}(f)$}};
+\draw (0, -3) node {\parbox{4cm}{\centering $H(f)$ }};
+
+
+\draw [->,line width=1pt] (-4.25,-0.5) -- (-4.25,-2.5);
+\draw [->,line width=1pt] (5.25,-0.5) -- (5.25,-2.5);
+\draw (-4.6, -1.5) node {\parbox{1cm}{\centering $\mathcal{F}$}};
+\draw (4.9, -1.5) node {\parbox{1cm}{\centering $\mathcal{F}$}};
+
+
+
+\end{tikzpicture}

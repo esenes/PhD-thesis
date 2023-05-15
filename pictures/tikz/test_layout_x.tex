@@ -1,0 +1,75 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm, scale=0.5, every node/.style={scale=.8}]
+
+\clip(-8,-4.) rectangle (18,4);
+
+\draw [shift={(-10,0)},line width=1pt]  plot[domain=-0.46364760900080615:0.4636476090008061,variable=\t]({1*4.47213595499958*cos(\t r)+0*4.47213595499958*sin(\t r)},{0*4.47213595499958*cos(\t r)+1*4.47213595499958*sin(\t r)});
+\draw [shift={(-8,0)},line width=1pt]  plot[domain=-0.46364760900080615:0.4636476090008061,variable=\t]({1*4.47213595499958*cos(\t r)+0*4.47213595499958*sin(\t r)},{0*4.47213595499958*cos(\t r)+1*4.47213595499958*sin(\t r)});
+\draw [shift={(-9,0)},line width=1pt]  plot[domain=-0.46364760900080615:0.4636476090008061,variable=\t]({1*4.47213595499958*cos(\t r)+0*4.47213595499958*sin(\t r)},{0*4.47213595499958*cos(\t r)+1*4.47213595499958*sin(\t r)});
+
+\draw [line width=1pt] (-1,1)-- (0,0);
+\draw [line width=1pt] (-1,-1)-- (0,0);
+\draw [line width=1pt] (0,0)-- (2,0);
+\draw [line width=1pt] (2,0)-- (2,0.5);
+\draw [line width=1pt] (2,0)-- (2,-0.5);
+\draw [line width=1pt] (2,-0.5)-- (5,-0.5);
+\draw [line width=1pt] (5,-0.5)-- (5,0.5);
+\draw [line width=1pt] (5,0.5)-- (2,0.5);
+\draw [line width=1pt] (5,0)-- (7,0);
+\draw [line width=1pt] (7,0)-- (7,1);
+\draw [line width=1pt] (7,1)-- (9,1);
+\draw [line width=1pt] (9,1)-- (9,0);
+\draw [line width=1pt] (9,0)-- (9,-1);
+\draw [line width=1pt] (9,-1)-- (7,-1);
+\draw [line width=1pt] (7,-1)-- (7,0);
+\draw [line width=1pt] (9,0)-- (11,0);
+
+\draw [line width=1pt] (11,0)-- (11,1);
+\draw [line width=1pt] (11,1)-- (12,0);
+\draw [line width=1pt] (12,0)-- (11,-1);
+\draw [line width=1pt] (11,-1)-- (11,0);
+
+\draw [line width=1pt] (12,0)-- (14,0);
+\draw [line width=1pt] (14,0)-- (14,1);
+\draw [line width=1pt] (14,1)-- (16,1);
+\draw [line width=1pt] (16,1)-- (16,-1);
+\draw [line width=1pt] (16,-1)-- (14,-1);
+\draw [line width=1pt] (14,0)-- (14,-1);
+\draw [line width=1pt] (7.2,0.4)-- (7.6,0.4);
+\fill[line width=1pt, fill=black, fill opacity=1] (7.6,0.2) -- (7.6,0.6) -- (7.8,0.4) -- cycle;
+\draw [line width=1pt] (7.8,0.4)-- (7.8,0.6);
+\draw [line width=1pt] (7.8,0.4)-- (7.8,0.2);
+\draw [line width=1pt] (7.8,0.4)-- (8.8,0.4);
+\draw [line width=1pt] (8.2,0.4)-- (8.2,0);
+\draw [line width=1pt] (8.2,0)-- (8,0);
+\draw [line width=1pt] (8.2,0)-- (8.4,0);
+\draw [line width=1pt] (8,-0.2)-- (8.2,-0.2);
+\draw [line width=1pt] (8.2,-0.2)-- (8.4,-0.2);
+\draw [line width=1pt] (8.2,-0.2)-- (8.2,-0.6);
+
+% \draw [->,line width=0.6pt] (14.2, 0) -- (15.8, 0);
+% \draw [->,line width=0.6pt] (15, -0.8) -- (15, 0.8);
+
+
+\draw (-5.7,4.) node[anchor=north west] {RF};
+\draw (-5.,-2) node[anchor=north west] {\parbox{5 cm}{\centering Horn Antenna \\(Optional)}};
+\draw (-1,4) node[anchor=north west] {\parbox{5 cm}{\centering Waveguide \\ Attenuator \\ 10-30 dB}};
+\draw (6.5,-2) node[anchor=north west] {\parbox{4 cm}{ Ka Band\\Detector}};
+\draw (8.,4) node[anchor=north west] {\parbox{4cm}{\centering Amplifier\\14 dB}};
+\draw (11.8,-2) node[anchor=north west] {\parbox{4cm}{\centering Oscilloscope}};
+
+\draw [dashed, line width=1pt] (13,1.25)-- (13,-4);
+
+\draw [line width=1pt] (14.2,-.8)-- (14.2,0.8);
+\draw [line width=1pt] (14.2,0.8) -- (15.8,0.8);
+\draw [line width=1pt] (15.8,0.8)-- (15.8,-0.8);
+\draw [line width=1pt] (14.2,-0.8)-- (15.8,-0.8);
+
+\draw [line width=1pt] (14.4,0)-- (14.6,0);
+\draw [line width=1pt] (14.6,0)-- (14.65,-0.2);
+\draw [line width=1pt] (14.65,-0.2)-- (14.8,0);
+\draw [line width=1pt] (14.8,0)-- (15.05,0);
+\draw [line width=1pt] (15.05,0)-- (15.2,0.4);
+\draw [line width=1pt] (15.2,0.4)-- (15.5,0);
+\draw [line width=1pt] (15.5,0)-- (15.6,0);
+
+\end{tikzpicture}

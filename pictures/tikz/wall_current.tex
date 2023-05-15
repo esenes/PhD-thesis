@@ -1,0 +1,60 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=stealth,x=1cm,y=1cm]
+\clip(-0.5,-3) rectangle (11,3);
+
+% first circle
+\draw [line width=1pt] (2,0) circle (2cm);
+\draw (2.102339116057103,0.049046415693315894) node[anchor=north west] {$I_b$};
+\draw [fill=black] (2,0) circle (2.5pt);
+
+\draw (-0.3,0) node[anchor=center] {$+$};
+\draw (4.3,0) node[anchor=center] {$+$};
+\draw (2,2.3) node[anchor=center] {$+$};
+\draw (2,-2.3) node[anchor=center] {$+$};
+
+\draw (0.36,1.72) node[anchor=center] {$+$};
+\draw (0.36,-1.72) node[anchor=center] {$+$};
+\draw (3.64,1.72) node[anchor=center] {$+$};
+\draw (3.64,-1.72) node[anchor=center] {$+$};
+
+% second circle
+
+
+\draw [fill=black] (9,1) circle (2.5pt);
+\draw [line width=1pt] (8,0) circle (2cm);
+
+\draw [->,line width=0.8pt] (8,-2.5) -- (8,2.5);
+\draw [->,line width=0.8pt] (5.5,0) -- (10.5,0);
+% \draw (10.4,0.1) node[anchor=north west] {$x$};
+% \draw (8.05,3) node[anchor=north west] {$y$};
+
+\draw [shift={(8,0)},line width=1pt,fill=black,fill opacity=0] (0,0) -- (0:0.6) arc (0:45:0.6) -- cycle;
+\draw [shift={(8,0)},line width=1pt,fill=black,fill opacity=0] (0,0) -- (165.55343672100963:0.6024446573006162) arc (165.55343672100963:194.52396626116362:0.6024446573006162) -- cycle;
+
+\draw [line width=1pt] (8,0)-- (9,1);
+\draw (9,1.1) node[anchor=north west] {$I_b$};
+\draw (8.5,0.6) node[anchor=north west] {$\theta$};
+\draw (8.5,0.8) node[anchor=center] {$r$};
+\draw (7.3,0.7) node[anchor=north west] {$\phi$};
+\draw [line width=1pt] (6.063238529254589,0.4989539111341559)-- (8,0);
+\draw [line width=1pt] (8,0)-- (6.063914351618504,-0.5015698975528741);
+
+\draw (9.64,1.72) node[anchor=center] {$+$};
+\draw (9.48,1.86) node[anchor=center] {$+$};
+\draw (9.78,1.57) node[anchor=center] {$+$};
+\draw (9.14,2.09) node[anchor=center] {$+$};
+\draw (10.03,1.24) node[anchor=center] {$+$};
+
+\draw (10.28,0.67) node[anchor=center] {$+$};
+\draw (8.56,2.31) node[anchor=center] {$+$};
+\draw (7.33,2.28) node[anchor=center] {$+$};
+\draw (10.31,-0.56) node[anchor=center] {$+$};
+
+\draw (6.36,-1.72) node[anchor=center] {$+$};
+\draw (5.69,0.56) node[anchor=center] {$+$};
+\draw (8.67,-2.28) node[anchor=center] {$+$};
+
+\draw (5.5,0) node[anchor=north west] {L};
+\draw (10,0) node[anchor=south west] {R};
+
+
+\end{tikzpicture}
